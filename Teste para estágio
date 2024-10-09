@@ -1,0 +1,74 @@
+//1) Programa de verificação de sequência de Fibonacci
+def fibonacci(n):
+    a, b = 0, 1
+    while a <= n:
+        if a == n:
+            return True
+        a, b = b, a + b
+    return False
+
+# Número para verificar
+numero = int(input("Informe um número: "))
+
+if fibonacci(numero):
+    print(f"O número {numero} pertence à sequência de Fibonacci.")
+else:
+    print(f"O número {numero} NÃO pertence à sequência de Fibonacci.")
+//2) Programa para contar ocorrências da letra 'a' (maiúscula ou minúscula)
+def contar_a(s):
+    return s.lower().count('a')
+
+# String para verificar
+string = input("Informe uma string: ")
+
+quantidade = contar_a(string)
+print(f"A letra 'a' aparece {quantidade} vezes na string informada.")
+//3) Qual será o valor da variável SOMA?
+int INDICE = 12, SOMA = 0, K = 1;
+enquanto K < INDICE faça {
+    K = K + 1;
+    SOMA = SOMA + K;
+}
+imprimir(SOMA);
+//Vamos calcular manualmente:
+//Iterações:
+//K = 2, SOMA = 2
+//K = 3, SOMA = 5
+//K = 4, SOMA = 9
+//K = 5, SOMA = 14
+//K = 6, SOMA = 20
+//K = 7, SOMA = 27
+//K = 8, SOMA = 35
+//K = 9, SOMA = 44
+//K = 10, SOMA = 54
+//K = 11, SOMA = 65
+//K = 12, SOMA = 77
+
+//4) Descubra a lógica e complete o próximo elemento
+//a) 1, 3, 5, 7, _
+
+//Lógica: A sequência está aumentando de 2 em 2. O próximo número é 9.
+//b) 2, 4, 8, 16, 32, 64, __
+
+//Lógica: Cada número é o dobro do anterior. O próximo número é 128.
+//c) 0, 1, 4, 9, 16, 25, 36, __
+
+//Lógica: A sequência é formada pelos quadrados perfeitos (0², 1², 2², 3², etc.). O próximo número é 49 (7²).
+//d) 4, 16, 36, 64, __
+
+//Lógica: A sequência é formada pelos quadrados de números pares (2², 4², 6², 8², etc.). O próximo número é 100 (10²).
+//e) 1, 1, 2, 3, 5, 8, __
+
+//Lógica: Esta é a sequência de Fibonacci. O próximo número é 13.
+//f) 2, 10, 12, 16, 17, 18, 19, __
+
+//Lógica: O padrão alterna entre somar 8 e somar 1. O próximo número é 20.
+//5) Problema dos três interruptores e três lâmpadas
+//Solução:
+
+//Ligue o primeiro interruptor e espere alguns minutos.
+//Desligue o primeiro interruptor e ligue o segundo.
+//Vá para a sala das lâmpadas:
+//A lâmpada que estiver acesa corresponde ao segundo interruptor.
+//A lâmpada que estiver apagada, mas estiver quente, corresponde ao primeiro interruptor (que foi ligado por algum tempo e depois desligado).
+//A lâmpada que estiver apagada e fria corresponde ao terceiro interruptor.
